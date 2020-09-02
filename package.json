@@ -11,5 +11,14 @@
   "dependencies": {
     "express": "^4.17.1",
     "pug": "^3.0.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryanwarnerus/Photo-Gallery.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ryanwarnerus/Photo-Gallery/issues"
+  },
+  "homepage": "https://github.com/ryanwarnerus/Photo-Gallery#readme"
 }
