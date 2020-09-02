@@ -50,3 +50,6 @@ echo ${dirs[5]}
 
 jo -p root="$galleryPath" directory=$(jo highQualityPath=${dirs[1]} folderName=$(jo photos=$(jo -a ${dirs[*]})) standardQualityPath=${dirs[2]} folderName=$(jo photos=$(jo 1=name1 2=name2))) 
 # use to save output once fixed :) --> append the following to the command I want to save: > directory.json
+
+# this command will generate our desired structure
+# jo -p root=/home/ryan/Photo\ Gallery directory=$(jo type=HQ folder=$(jo name=Maine images=$(jo -a image1 image2)))
