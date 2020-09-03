@@ -5,7 +5,6 @@ const port = 80;
 
 app.set('view engine', 'pug');
 
-
 //render homepage
 app.get("/", (req, res) => {
     res.render('index');
