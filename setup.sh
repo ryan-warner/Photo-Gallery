@@ -40,7 +40,7 @@ else
 fi
 
 dirs=($(find "$galleryPath/" -maxdepth 1 -type d -print0 | xargs -0)) 
-
+files=($(find "${dirs[*]}/" -maxdepth 1 -type f -print0 | xargs -0))
 
 echo ${dirs[1]}
 echo ${dirs[2]}
@@ -48,7 +48,13 @@ echo ${dirs[3]}
 echo ${dirs[4]}
 echo ${dirs[5]}
 
-jo -p root="$galleryPath" directory=$(jo highQualityPath=${dirs[1]} folderName=$(jo photos=$(jo -a ${dirs[*]})) standardQualityPath=${dirs[2]} folderName=$(jo photos=$(jo 1=name1 2=name2))) 
+echo ${files[1]}
+echo ${files[2]}
+echo ${files[3]}
+echo ${files[4]}
+echo ${files[5]}
+
+# jo -p root="$galleryPath" directory=$(jo highQualityPath=${dirs[1]} folderName=$(jo photos=$(jo -a ${dirs[*]})) standardQualityPath=${dirs[2]} folderName=$(jo photos=$(jo 1=name1 2=name2))) 
 # use to save output once fixed :) --> append the following to the command I want to save: > directory.json
 
 # this command will generate our desired structure
