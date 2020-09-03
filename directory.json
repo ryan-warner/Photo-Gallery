@@ -1,0 +1,41 @@
+[
+  {"type":"directory","name":"/home/ryan/Photo Gallery/Photo Library","contents":[
+    {"type":"directory","name":"HQ","contents":[
+      {"type":"directory","name":"Gallery 1","contents":[
+        {"type":"file","name":"test1.txt"},
+        {"type":"file","name":"test2.txt"},
+        {"type":"file","name":"test3.txt"}
+      ]},
+      {"type":"directory","name":"Gallery 2","contents":[
+        {"type":"file","name":"test4.txt"},
+        {"type":"file","name":"test5.txt"},
+        {"type":"file","name":"test6.txt"}
+      ]}
+    ]},
+    {"type":"directory","name":"SQ","contents":[
+      {"type":"directory","name":"Gallery 1","contents":[
+        {"type":"file","name":"test1.txt"},
+        {"type":"file","name":"test2.txt"},
+        {"type":"file","name":"test3.txt"}
+      ]},
+      {"type":"directory","name":"Gallery 2","contents":[
+        {"type":"file","name":"test4.txt"},
+        {"type":"file","name":"test5.txt"},
+        {"type":"file","name":"test6.txt"}
+      ]}
+    ]},
+    {"type":"directory","name":"T","contents":[
+      {"type":"directory","name":"Gallery 1","contents":[
+        {"type":"file","name":"test1.txt"},
+        {"type":"file","name":"test2.txt"},
+        {"type":"file","name":"test3.txt"}
+      ]},
+      {"type":"directory","name":"Gallery 2","contents":[
+        {"type":"file","name":"test4.txt"},
+        {"type":"file","name":"test5.txt"},
+        {"type":"file","name":"test6.txt"}
+      ]}
+    ]}
+  ]},
+  {"type":"report","directories":9,"files":18}
+]

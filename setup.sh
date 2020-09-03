@@ -39,7 +39,8 @@ else
   exit
 fi
 
-tree $galleryPath -J -L 2
+tree "$galleryPath" -J -L 3 > directory.json
+tree "$galleryPath" -J -L 3
 # need to figure out how to store the variable with escaped characters
 
 
