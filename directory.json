@@ -10,6 +10,11 @@
         {"type":"file","name":"test4.txt"},
         {"type":"file","name":"test5.txt"},
         {"type":"file","name":"test6.txt"}
+      ]},
+      {"type":"directory","name":"Gallery 3","contents":[
+        {"type":"file","name":"test7.txt"},
+        {"type":"file","name":"test8.txt"},
+        {"type":"file","name":"test9.txt"}
       ]}
     ]},
     {"type":"directory","name":"SQ","contents":[
@@ -22,6 +27,11 @@
         {"type":"file","name":"test4.txt"},
         {"type":"file","name":"test5.txt"},
         {"type":"file","name":"test6.txt"}
+      ]},
+      {"type":"directory","name":"Gallery 3","contents":[
+        {"type":"file","name":"test7.txt"},
+        {"type":"file","name":"test8.txt"},
+        {"type":"file","name":"test9.txt"}
       ]}
     ]},
     {"type":"directory","name":"T","contents":[
@@ -34,8 +44,13 @@
         {"type":"file","name":"test4.txt"},
         {"type":"file","name":"test5.txt"},
         {"type":"file","name":"test6.txt"}
+      ]},
+      {"type":"directory","name":"Gallery 3","contents":[
+        {"type":"file","name":"test7.txt"},
+        {"type":"file","name":"test8.txt"},
+        {"type":"file","name":"test9.txt"}
       ]}
     ]}
   ]},
-  {"type":"report","directories":9,"files":18}
+  {"type":"report","directories":12,"files":27}
 ]
