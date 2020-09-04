@@ -1,9 +1,11 @@
 doctype html 
 html
     head
-        title Photo Gallery
+        title="Photo Gallery - "+`${title}`
         link(rel='stylesheet', href='/styles/style.css')
         meta(name='viewport' content='windth=device-width, initial-scale=1')
     body
-       h1 Photo Gallery
+       h1=title
        p Individual Gallery Page
+
+       a(href='//localhost/navigation') Return to navigation
