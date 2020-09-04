@@ -1,10 +1,14 @@
 doctype html 
 html
     head
-        title Photo Gallery
+        title Photo Gallery - Navigation
         link(rel='stylesheet', href='/styles/style.css')
         meta(name='viewport' content='windth=device-width, initial-scale=1')
     body
        h1 Photo Gallery
        p Navigation Page
-       
+        ul
+         each folder in folders
+          - var index = folders.indexOf(`${folder}`)
+             a(href='//localhost/' + links[index]) 
+              li= folder
