@@ -31,7 +31,6 @@ var linkArray = [];
 
 //render individual gallery pages
 navigation.forEach(element => {
-    var folders = folders + 1
     //list folder name as it exists in the directory
     console.log(`${element.name}`)
     //convert to usable name
