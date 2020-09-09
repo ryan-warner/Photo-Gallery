@@ -39,19 +39,25 @@ navigation.forEach(element => {
     console.log("   "+"Usable Name: "+usableName);
     
     //calculate the number of rows and columns
-    console.log(element.contents)
-    console.log(element.contents.length)
+    console.log(element)
     
     //need to set a foreach in this, add name to array (skip zone identifier?) then pass that array to the pug page
     //the pug array should calculate the length, divide by 5, and round up to find the number of rows
     //should also add path of ALL GALLERY FOLDERS here for the specific page to reference
     //at least just HQ/SQ/T
 
+    //my attempt to serve the directory (didn't really work)
+    app.use(express.static(__dirname));
+
+
 
     //deploy page under that name with 
     app.get("/"+`${usableName}`, (req, res) => {
         res.render('gallery', {
             title: `${element.name}`,
+            //trying to pass the path through, need to figure out how
+            //likely need to add different elements of the JSON together
+            path: `${element}`
 
         });
     });
