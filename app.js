@@ -37,6 +37,15 @@ navigation.forEach(element => {
     usableName = element.name.replace(/\s+/g, '-').toLowerCase();
     usableName = usableName.replace('---', '-');
     console.log("   "+"Usable Name: "+usableName);
+    
+    //calculate the number of rows and columns
+    console.log(element.contents)
+    console.log(element.contents.length)
+    
+    //need to set a foreach in this, add name to array (skip zone identifier?) then pass that array to the pug page
+    //the pug array should calculate the length, divide by 5, and round up to find the number of rows
+
+
     //deploy page under that name with 
     app.get("/"+`${usableName}`, (req, res) => {
         res.render('gallery', {
@@ -51,12 +60,16 @@ navigation.forEach(element => {
     //? and more I'm sure
 });
 
-
+//navigation variables
+var numPhotos = (jsonContent[1].files)/3
+var numAlbums = (jsonContent[1].directories)
 //render navigation page
 app.get("/navigation", (req, res) => {
     res.render('navigation', {
         folders: navigationArray,
-        links: linkArray
+        links: linkArray,
+        photos: numPhotos,
+        albums: numAlbums
     });
 });
 
