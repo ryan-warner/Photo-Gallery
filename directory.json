@@ -1,56 +1,119 @@
 [
   {"type":"directory","name":"/home/ryan/Photo Gallery/Photo Library","contents":[
     {"type":"directory","name":"HQ","contents":[
-      {"type":"directory","name":"Gallery 1","contents":[
-        {"type":"file","name":"test1.txt"},
-        {"type":"file","name":"test2.txt"},
-        {"type":"file","name":"test3.txt"}
+      {"type":"directory","name":"Gallery 1 - Zoomed Out","contents":[
+        {"type":"file","name":"Image 1.tif"},
+        {"type":"file","name":"Image 1.tif:Zone.Identifier"},
+        {"type":"file","name":"Image 3.tif"},
+        {"type":"file","name":"Image 3.tif:Zone.Identifier"},
+        {"type":"file","name":"Image 4.tif"},
+        {"type":"file","name":"Image 4.tif:Zone.Identifier"},
+        {"type":"file","name":"Image 5.tif"},
+        {"type":"file","name":"Image 5.tif:Zone.Identifier"},
+        {"type":"file","name":"Image 6.tif"},
+        {"type":"file","name":"Image 6.tif:Zone.Identifier"},
+        {"type":"file","name":"Image 7.tif"},
+        {"type":"file","name":"Image 7.tif:Zone.Identifier"}
       ]},
-      {"type":"directory","name":"Gallery 2","contents":[
-        {"type":"file","name":"test4.txt"},
-        {"type":"file","name":"test5.txt"},
-        {"type":"file","name":"test6.txt"}
+      {"type":"directory","name":"Gallery 2 - Zoomed In","contents":[
+        {"type":"file","name":"Image 1.tif"},
+        {"type":"file","name":"Image 1.tif:Zone.Identifier"},
+        {"type":"file","name":"Image 3.tif"},
+        {"type":"file","name":"Image 3.tif:Zone.Identifier"},
+        {"type":"file","name":"Image 4.tif"},
+        {"type":"file","name":"Image 4.tif:Zone.Identifier"},
+        {"type":"file","name":"Image 5.tif"},
+        {"type":"file","name":"Image 5.tif:Zone.Identifier"},
+        {"type":"file","name":"Image 6.tif"},
+        {"type":"file","name":"Image 6.tif:Zone.Identifier"},
+        {"type":"file","name":"Image 7.tif"},
+        {"type":"file","name":"Image 7.tif:Zone.Identifier"}
       ]},
-      {"type":"directory","name":"Gallery 3","contents":[
-        {"type":"file","name":"test7.txt"},
-        {"type":"file","name":"test8.txt"},
-        {"type":"file","name":"test9.txt"}
+      {"type":"directory","name":"Gallery 3 - Zoomed In and Cropped","contents":[
+        {"type":"file","name":"Image 1.tif"},
+        {"type":"file","name":"Image 1.tif:Zone.Identifier"},
+        {"type":"file","name":"Image 3.tif"},
+        {"type":"file","name":"Image 3.tif:Zone.Identifier"},
+        {"type":"file","name":"Image 4.tif"},
+        {"type":"file","name":"Image 4.tif:Zone.Identifier"},
+        {"type":"file","name":"Image 5.tif"},
+        {"type":"file","name":"Image 5.tif:Zone.Identifier"},
+        {"type":"file","name":"Image 6.tif"},
+        {"type":"file","name":"Image 6.tif:Zone.Identifier"},
+        {"type":"file","name":"Image 7.tif"},
+        {"type":"file","name":"Image 7.tif:Zone.Identifier"}
       ]}
     ]},
     {"type":"directory","name":"SQ","contents":[
-      {"type":"directory","name":"Gallery 1","contents":[
-        {"type":"file","name":"test1.txt"},
-        {"type":"file","name":"test2.txt"},
-        {"type":"file","name":"test3.txt"}
+      {"type":"directory","name":"Gallery 1 - Zoomed Out","contents":[
+        {"type":"file","name":"Image 1.jpg"},
+        {"type":"file","name":"Image 3.jpg"},
+        {"type":"file","name":"Image 4.jpg"},
+        {"type":"file","name":"Image 5.jpg"},
+        {"type":"file","name":"Image 6.jpg"},
+        {"type":"file","name":"Image 7.jpg"}
       ]},
-      {"type":"directory","name":"Gallery 2","contents":[
-        {"type":"file","name":"test4.txt"},
-        {"type":"file","name":"test5.txt"},
-        {"type":"file","name":"test6.txt"}
+      {"type":"directory","name":"Gallery 2 - Zoomed In","contents":[
+        {"type":"file","name":"Image 1.jpg"},
+        {"type":"file","name":"Image 3.jpg"},
+        {"type":"file","name":"Image 4.jpg"},
+        {"type":"file","name":"Image 5.jpg"},
+        {"type":"file","name":"Image 6.jpg"},
+        {"type":"file","name":"Image 7.jpg"}
       ]},
-      {"type":"directory","name":"Gallery 3","contents":[
-        {"type":"file","name":"test7.txt"},
-        {"type":"file","name":"test8.txt"},
-        {"type":"file","name":"test9.txt"}
+      {"type":"directory","name":"Gallery 3 - Zoomed In and Cropped","contents":[
+        {"type":"file","name":"Image 1.jpg"},
+        {"type":"file","name":"Image 3.jpg"},
+        {"type":"file","name":"Image 4.jpg"},
+        {"type":"file","name":"Image 5.jpg"},
+        {"type":"file","name":"Image 6.jpg"},
+        {"type":"file","name":"Image 7.jpg"}
       ]}
     ]},
     {"type":"directory","name":"T","contents":[
-      {"type":"directory","name":"Gallery 1","contents":[
-        {"type":"file","name":"test1.txt"},
-        {"type":"file","name":"test2.txt"},
-        {"type":"file","name":"test3.txt"}
+      {"type":"directory","name":"Gallery 1 - Zoomed Out","contents":[
+        {"type":"file","name":"Image 1.jpg"},
+        {"type":"file","name":"Image 1.jpg:Zone.Identifier"},
+        {"type":"file","name":"Image 3.jpg"},
+        {"type":"file","name":"Image 3.jpg:Zone.Identifier"},
+        {"type":"file","name":"Image 4.jpg"},
+        {"type":"file","name":"Image 4.jpg:Zone.Identifier"},
+        {"type":"file","name":"Image 5.jpg"},
+        {"type":"file","name":"Image 5.jpg:Zone.Identifier"},
+        {"type":"file","name":"Image 6.jpg"},
+        {"type":"file","name":"Image 6.jpg:Zone.Identifier"},
+        {"type":"file","name":"Image 7.jpg"},
+        {"type":"file","name":"Image 7.jpg:Zone.Identifier"}
       ]},
-      {"type":"directory","name":"Gallery 2","contents":[
-        {"type":"file","name":"test4.txt"},
-        {"type":"file","name":"test5.txt"},
-        {"type":"file","name":"test6.txt"}
+      {"type":"directory","name":"Gallery 2 - Zoomed In","contents":[
+        {"type":"file","name":"Image 1.jpg"},
+        {"type":"file","name":"Image 1.jpg:Zone.Identifier"},
+        {"type":"file","name":"Image 3.jpg"},
+        {"type":"file","name":"Image 3.jpg:Zone.Identifier"},
+        {"type":"file","name":"Image 4.jpg"},
+        {"type":"file","name":"Image 4.jpg:Zone.Identifier"},
+        {"type":"file","name":"Image 5.jpg"},
+        {"type":"file","name":"Image 5.jpg:Zone.Identifier"},
+        {"type":"file","name":"Image 6.jpg"},
+        {"type":"file","name":"Image 6.jpg:Zone.Identifier"},
+        {"type":"file","name":"Image 7.jpg"},
+        {"type":"file","name":"Image 7.jpg:Zone.Identifier"}
       ]},
-      {"type":"directory","name":"Gallery 3","contents":[
-        {"type":"file","name":"test7.txt"},
-        {"type":"file","name":"test8.txt"},
-        {"type":"file","name":"test9.txt"}
+      {"type":"directory","name":"Gallery 3 - Zoomed In and Cropped","contents":[
+        {"type":"file","name":"Image 1.jpg"},
+        {"type":"file","name":"Image 1.jpg:Zone.Identifier"},
+        {"type":"file","name":"Image 3.jpg"},
+        {"type":"file","name":"Image 3.jpg:Zone.Identifier"},
+        {"type":"file","name":"Image 4.jpg"},
+        {"type":"file","name":"Image 4.jpg:Zone.Identifier"},
+        {"type":"file","name":"Image 5.jpg"},
+        {"type":"file","name":"Image 5.jpg:Zone.Identifier"},
+        {"type":"file","name":"Image 6.jpg"},
+        {"type":"file","name":"Image 6.jpg:Zone.Identifier"},
+        {"type":"file","name":"Image 7.jpg"},
+        {"type":"file","name":"Image 7.jpg:Zone.Identifier"}
       ]}
     ]}
   ]},
-  {"type":"report","directories":12,"files":27}
+  {"type":"report","directories":12,"files":90}
 ]

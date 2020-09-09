@@ -33,8 +33,9 @@ var linkArray = [];
 navigation.forEach(element => {
     //list folder name as it exists in the directory
     console.log(`${element.name}`)
-    //convert to usable name
+    //convert to usable name, replacing three hyphens if they occur together with a single hyphen
     usableName = element.name.replace(/\s+/g, '-').toLowerCase();
+    usableName = usableName.replace('---', '-');
     console.log("   "+"Usable Name: "+usableName);
     //deploy page under that name with 
     app.get("/"+`${usableName}`, (req, res) => {
