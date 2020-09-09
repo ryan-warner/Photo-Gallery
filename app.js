@@ -44,6 +44,8 @@ navigation.forEach(element => {
     
     //need to set a foreach in this, add name to array (skip zone identifier?) then pass that array to the pug page
     //the pug array should calculate the length, divide by 5, and round up to find the number of rows
+    //should also add path of ALL GALLERY FOLDERS here for the specific page to reference
+    //at least just HQ/SQ/T
 
 
     //deploy page under that name with 
