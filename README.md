@@ -2,8 +2,6 @@
 
 ![Header image](https://github.com/ryan-warner/Photo-Gallery/blob/master/Assorted%20Files/film-example.jpg)
  
- ***
-
 A hands-free photo gallery built around NodeJS
 
 This system enables the sharing of high quality images at any desired scale, with minimal user input. Instead of relying upon the user to write folder-specific webpages, the system runs through the library made available to it and serves the necessary pages. 
