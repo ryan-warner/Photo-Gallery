@@ -1,6 +1,6 @@
 # Automatic Photo Gallery
 
-![Header image](/Assorted\ Files/film-example.jpg)
+![Header image](https://github.com/ryan-warner/Photo-Gallery/blob/master/Assorted%20Files/film-example.jpg)
  
  ***
 
