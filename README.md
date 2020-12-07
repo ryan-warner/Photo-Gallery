@@ -24,7 +24,7 @@ I'm just a busy college student who started this project while in the midst of q
 - [x] Sitewide CSS styling
 - [x] Lightbox functionality
 - [ ] Explore the possibility of internal image resampling, conversion, and thumbnail generation
-- [ ] Rework gallery indexing logic by eliminating hardcoded approach
+- [x] Rework gallery indexing logic by eliminating hardcoded approach
 - [ ] Explore the possibilty of online site creation logic
   - [ ] Welcome page if no content is found
   - [ ] Uploading folders to the correct directories, followed by internal processing of these uploads
