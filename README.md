@@ -14,17 +14,17 @@ I'm just a busy college student who started this project while in the midst of q
 ## Features:
 - Automatic indexing of library contents
 - Parsing of album names into album-specific URLs and headings
+- Fit/fill scripting for square thumbnails container
+- Lightbox functionality
+- Flexible indexing logic
 - More coming later
 
 ## Future Development
 - [x] Automatic sorting of album images into a responsive layout within the album-specific page
 - [x] Scripted context menu enabling selective download of images at the qualities provided by the user
-- [x] Thumbnail preference controls that enable a shift between fitting to a square div or filling the square div
 - [x] Complete homepage redesign
 - [x] Sitewide CSS styling
-- [x] Lightbox functionality
 - [ ] Explore the possibility of internal image resampling, conversion, and thumbnail generation
-- [x] Rework gallery indexing logic by eliminating hardcoded approach
 - [ ] Explore the possibilty of online site creation logic
   - [ ] Welcome page if no content is found
   - [ ] Uploading folders to the correct directories, followed by internal processing of these uploads
