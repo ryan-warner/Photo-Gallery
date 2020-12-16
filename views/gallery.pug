@@ -1,17 +1,40 @@
 doctype html 
 html
     head
-        title="Photo Gallery - "+`${title}`
-        link(rel='stylesheet', href='/styles/style.css')
-        meta(name='viewport' content='windth=device-width, initial-scale=1')
+        title="Photo Gallery - " + `${title}`
+        link(rel='stylesheet', href='/styles/gallery.css')
+        link(rel='stylesheet', href='/js/simpleLightbox.min.css')
+        script(src='/js/simpleLightbox.min.js')
+        script(type='text/javascript', src="/corejs/index.js")
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        link(rel='preconnect', href='https://fonts.gstatic.com')
+        link(href='https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;600;700&display=swap', rel='stylesheet')
     body
-        h1=title
-        p Individual Gallery Page
+        div(class='header')
+            nav
+                a(href='//localhost', class='navlinks', id='returnHome') 
+                    h1 Fuehrer Family Photo Gallery
+                div(class='buttonContainer')
+                a(href='//localhost/navigation',class='navlinks', id='navigation') 
+                    h2 Navigation
 
-        - //need to figure out how to reference the path
+        div(class='gallery-container')
+            div(class='gallery-header')
+                h2=title
+                p Individual Gallery Page
 
-        img(src=`//localhost/${usableName}/Image 1.jpg`)
+                button(onclick='fitFill()')
+                    img(src='/assets/fill.svg', id='fitFill')
+                    p(id='fitFillText') Fill
 
-        - //img(src=`/home/ryan/Photo Gallery/Photo Library/HQ/Gallery 1 - Zoomed Out`+`/Image 1.tif`)
+            br
+            
+            div(class='photo-container')
+                each photo in photos
+                    - var index = photos.indexOf(photo)
+                        div(class='photo')
+                            a(href='//localhost/source' + `${sqPath}` + '/' + SQFinal[index])
+                                img(src='//localhost/' + `${path}` + '/'+ photo, class='images')
 
-        a(href='//localhost/navigation') Return to navigation
+        script.
+            new SimpleLightbox({elements: '.photo-container a'});

@@ -4,12 +4,14 @@ html
         title Photo Gallery - Navigation
         link(rel='stylesheet', href='/styles/style.css')
         meta(name='viewport' content='windth=device-width, initial-scale=1')
+        link(rel='preconnect', href='https://fonts.gstatic.com')
+        link(href='https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap', rel='stylesheet')
     body
         h1 Photo Gallery
         p Navigation Page
             ul
                 each folder in folders
-                    - var index = folders.indexOf(`${folder}`)
+                    - var index = folders.indexOf(folder)
                         a(href='//localhost/' + links[index]) 
                             li= folder
 

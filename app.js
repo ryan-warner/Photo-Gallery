@@ -27,6 +27,11 @@ console.log(' ')
 
 
 var galleryRoot = jsonContent[0].name
+app.use('/source',express.static(galleryRoot));
+app.use('/styles',express.static(__dirname + '/styles'));
+app.use('/corejs',express.static(__dirname + '/js'));
+app.use('/assets',express.static(__dirname + '/assets'));
+app.use('/js',express.static(__dirname + '/node_modules/simple-lightbox/dist'));
 console.log('Gallery Root: ' + galleryRoot)
 console.log(' ')
 
@@ -52,7 +57,9 @@ for (var i = 0; i <= jsonContent.length; i++){
     }
   }
 
-var navigation =  jsonContent[0].contents[`${ThumbInd}`].contents;
+var ThumbArray = jsonContent[0].contents[`${ThumbInd}`].contents;
+var SQArray = jsonContent[0].contents[`${SQInd}`].contents;
+var HQArray = jsonContent[0].contents[`${HQInd}`].contents;
 var hQPath = galleryRoot + '/' + jsonContent[0].contents[HQInd].name
 var sQPath = galleryRoot + '/' + jsonContent[0].contents[SQInd].name
 var thumbPath = galleryRoot + '/' + jsonContent[0].contents[ThumbInd].name
@@ -69,7 +76,7 @@ var navigationArray = [];
 var linkArray = [];
 
 //render individual gallery pages
-navigation.forEach(element => {
+ThumbArray.forEach(element => {
     //list folder name as it exists in the directory
     console.log(`${element.name}`)
     //convert to usable name, replacing three hyphens if they occur together with a single hyphen
@@ -77,30 +84,57 @@ navigation.forEach(element => {
     usableName = usableName.replace('---', '-');
     console.log("   "+"Usable Name: " + usableName);
 
-    var currentPath = thumbPath + '/' + element.name
+    var currentPath = '/T/' + element.name
+    var sqPath = '/SQ/' + element.name
     console.log('   ' + 'Current Path: ' + currentPath)
     
     //calculate the number of rows and columns
-    // console.log(element)
+    //console.log(element)
     
     //need to set a foreach in this, add name to array (skip zone identifier?) then pass that array to the pug page
     //the pug array should calculate the length, divide by 5, and round up to find the number of rows
     //should also add path of ALL GALLERY FOLDERS here for the specific page to reference
     //at least just HQ/SQ/T
 
-    //my attempt to serve the directory (didn't really work)
-    app.use('/' + usableName + '-database',express.static(currentPath));
+    var files = element.contents
+    //console.log(files)
+
+    var filesArr = []
+    files.forEach(element => {
+        var temp = element.name.endsWith('.jpg') || element.name.endsWith('.png')
+        if (temp == true) {
+            filesArr.push(`${element.name}`)
+        }
+    })
+
+    var index = ThumbArray.indexOf(element)
+
+    var SQUpdated = SQArray[index].contents
+    
+    var SQFinal = []
+    SQUpdated.forEach(element => {
+        var temp = element.name.endsWith('.jpg') || element.name.endsWith('.png')
+        if (temp == true) {
+            SQFinal.push(`${element.name}`)
+        }
+    })
 
 
+    console.log('   Source Path: ' + '/source' + currentPath)
+
+    var sourcePath = 'source' + currentPath
 
     //deploy page under that name with 
     app.get("/"+`${usableName}`, (req, res) => {
+        res.locals.session = req.session
         res.render('gallery', {
             title: `${element.name}`,
-            usableName: `${usableName}-database`,
             //trying to pass the path through, need to figure out how
             //likely need to add different elements of the JSON together
-            path: `${currentPath}`
+            path: `${sourcePath}`,
+            sqPath: sqPath,
+            photos: filesArr,
+            SQFinal: SQFinal
 
         });
     });
