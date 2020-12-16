@@ -1,0 +1,135 @@
+body {
+    margin: 0 auto;
+}
+
+/** Header CSS **/
+
+.header{
+    width: 100%;
+    background-color: rgb(142, 198, 233);
+    margin-top: 0px;
+}
+
+/** Responsive Header -- Need to move below once fixed **/
+
+
+@media (min-width: 1400px) {
+    nav {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+}
+
+
+
+.navlinks{
+    color:black;
+    text-decoration: none;
+    padding: 10px;
+}
+
+#returnHome{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    margin: 10px;
+    margin-left: 0;
+    padding-left: 50px;
+}
+
+.buttonContainer{
+    padding-right: 40px;
+}
+
+#navigation{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    margin: 10px;
+}
+
+#navigation:hover {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    border-radius: 15px;
+    background-color: red;
+    color: yellow;
+}
+
+h1, h2{
+    margin: 0;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+/** Image Gallery **/
+
+.images {
+    transform: scale(1.0);
+    transition-duration: 0.2s;
+    /**-webkit-transform: scale(1.6);**/
+
+}
+
+.gallery-container {
+    width: 100%;
+    margin: 0px;
+}
+
+.gallery-header{
+    padding-left: 50px;
+    margin: 0px;
+}
+
+.photo-container {
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 1rem;
+}
+
+.photo {
+    display: inline-block;
+    overflow: hidden;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+
+/** Responsive Grid and Webpage CSS **/
+
+@media (min-width: 799px) {
+    .photo-container { 
+        grid-template-columns: repeat(2, 1fr); 
+    }
+    
+    /* nav {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    } */
+}
+
+@media (min-width: 1099px) {
+    .photo-container { 
+        grid-template-columns: repeat(3, 1fr); 
+    }
+}
+
+@media (min-width: 1399px) {
+    .photo-container { 
+        grid-template-columns: repeat(4, 1fr); 
+    }
+}
+
+@media (min-width: 1400px) {
+    .photo-container { 
+        grid-template-columns: repeat(5, 1fr); 
+    }
+}
