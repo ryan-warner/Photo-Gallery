@@ -47,11 +47,23 @@
     {"type":"directory","name":"SQ","contents":[
       {"type":"directory","name":"Gallery 1 - Zoomed Out","contents":[
         {"type":"file","name":"Image 1.jpg"},
+        {"type":"file","name":"Image 10.jpg"},
+        {"type":"file","name":"Image 11.jpg"},
+        {"type":"file","name":"Image 12.jpg"},
+        {"type":"file","name":"Image 13.jpg"},
+        {"type":"file","name":"Image 14.jpg"},
+        {"type":"file","name":"Image 15.jpg"},
+        {"type":"file","name":"Image 16.jpg"},
+        {"type":"file","name":"Image 17.jpg"},
+        {"type":"file","name":"Image 18.jpg"},
+        {"type":"file","name":"Image 19.jpg"},
         {"type":"file","name":"Image 3.jpg"},
         {"type":"file","name":"Image 4.jpg"},
         {"type":"file","name":"Image 5.jpg"},
         {"type":"file","name":"Image 6.jpg"},
-        {"type":"file","name":"Image 7.jpg"}
+        {"type":"file","name":"Image 7.jpg"},
+        {"type":"file","name":"Image 8.jpg"},
+        {"type":"file","name":"Image 9.jpg"}
       ]},
       {"type":"directory","name":"Gallery 2 - Zoomed In","contents":[
         {"type":"file","name":"Image 1.jpg"},
@@ -74,6 +86,17 @@
       {"type":"directory","name":"Gallery 1 - Zoomed Out","contents":[
         {"type":"file","name":"Image 1.jpg"},
         {"type":"file","name":"Image 1.jpg:Zone.Identifier"},
+        {"type":"file","name":"Image 1.tif"},
+        {"type":"file","name":"Image 10.jpg"},
+        {"type":"file","name":"Image 11.jpg"},
+        {"type":"file","name":"Image 12.jpg"},
+        {"type":"file","name":"Image 13.jpg"},
+        {"type":"file","name":"Image 14.jpg"},
+        {"type":"file","name":"Image 15.jpg"},
+        {"type":"file","name":"Image 16.jpg"},
+        {"type":"file","name":"Image 17.jpg"},
+        {"type":"file","name":"Image 18.jpg"},
+        {"type":"file","name":"Image 19.jpg"},
         {"type":"file","name":"Image 3.jpg"},
         {"type":"file","name":"Image 3.jpg:Zone.Identifier"},
         {"type":"file","name":"Image 4.jpg"},
@@ -83,7 +106,9 @@
         {"type":"file","name":"Image 6.jpg"},
         {"type":"file","name":"Image 6.jpg:Zone.Identifier"},
         {"type":"file","name":"Image 7.jpg"},
-        {"type":"file","name":"Image 7.jpg:Zone.Identifier"}
+        {"type":"file","name":"Image 7.jpg:Zone.Identifier"},
+        {"type":"file","name":"Image 8.jpg"},
+        {"type":"file","name":"Image 9.jpg"}
       ]},
       {"type":"directory","name":"Gallery 2 - Zoomed In","contents":[
         {"type":"file","name":"Image 1.jpg"},
@@ -115,5 +140,5 @@
       ]}
     ]}
   ]},
-  {"type":"report","directories":12,"files":90}
+  {"type":"report","directories":12,"files":115}
 ]
