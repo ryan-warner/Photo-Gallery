@@ -4,16 +4,19 @@
   "description": "High quality photo library for scanned film photos",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:css": "postcss styles/tailwind.css -o styles/styles.css"
   },
   "author": "Ryan Warner",
   "license": "ISC",
   "dependencies": {
+    "autoprefixer": "^10.2.5",
     "express": "^4.17.1",
+    "postcss": "^8.2.8",
+    "postcss-cli": "^8.3.1",
     "pug": "^3.0.0",
-    "simple-lightbox": "^2.1.0"
+    "simple-lightbox": "^2.1.0",
+    "tailwindcss": "^2.0.3"
   },
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ryanwarnerus/Photo-Gallery.git"
@@ -21,5 +24,6 @@
   "bugs": {
     "url": "https://github.com/ryanwarnerus/Photo-Gallery/issues"
   },
-  "homepage": "https://github.com/ryanwarnerus/Photo-Gallery#readme"
+  "homepage": "https://github.com/ryanwarnerus/Photo-Gallery#readme",
+  "keywords": []
 }
