@@ -17,8 +17,9 @@ html
                 a(href='//localhost/about' class='order-3 m-2 self-center font-medium opacity-70 hover:opacity-100 duration-75') About
 
             div(class='flex order-2')
-                p(class='m-2 self-center text-lg font-semibold opacity-70')
-                    =title
+                div(class='self-center shadow-inner bg-gray-300 rounded-md text-lg font-semibold opacity-70')
+                    p(class='self-center mx-2 my-1')
+                        =title
 
         br
         br
@@ -34,15 +35,15 @@ html
 
             br
             
-            div(class='photo-container')
+            div(id ='photo-container' class='min-w-full grid grid-cols-5 gap-6')
                 each photo in photos
                     - var index = photos.indexOf(photo)
-                        div(class='photo')
+                        div(class='overflow-hidden')
                             a(href='//localhost/source' + `${sqPath}` + '/' + SQFinal[index])
-                                img(src='//localhost/' + `${path}` + '/'+ photo, class='images')
+                                img(src='//localhost/' + `${path}` + '/'+ photo, id='images' class='transform scale-100 rounded-xl')
 
         script.
-            new SimpleLightbox({elements: '.photo-container a'});
+            new SimpleLightbox({elements: '#photo-container a'});
 
         br
         br

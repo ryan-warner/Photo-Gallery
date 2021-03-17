@@ -18,8 +18,9 @@ html
             ul
                 each folder in folders
                     - var index = folders.indexOf(folder)
-                        a(href='//localhost/' + links[index]) 
-                            li= folder
+                        div(class='')
+                            a(href='//localhost/' + links[index]) 
+                                li= folder
 
         p="This gallery is made up of "+`${photos}`+" photos contained in "+`${albums}`+' albums.'
 
