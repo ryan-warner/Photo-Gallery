@@ -24,23 +24,23 @@ html
         br
         br
 
-        div(class='gallery-container')
-            div(class='gallery-header')
-                h2=title
-                p Individual Gallery Page
+        div(class='mx-24')
 
-                button(onclick='fitFill()')
-                    img(src='/assets/fill.svg', id='fitFill')
-                    p(id='fitFillText') Fill
+            div(class='h-7 w-16 bg-purple-600 rounded-lg shadow-lg')
+                div(onclick='fitFill()' class='flex min-h-full items-center justify-around')
+                    svg(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 560" class='h-5 w-5')
+                        path(id='fitFill1' d="M509.09 479.09c0 16.5-13.5 30-30 30H80.91c-16.5 0-30-13.5-30-30V80.91c0-16.5 13.5-30 30-30h398.18c16.5 0 30 13.5 30 30v398.18z" fill="#7c3aed")
+                        path(id='fitFill2' d="M509.09 479.09c0 16.5-13.5 30-30 30H80.91c-16.5 0-30-13.5-30-30V80.91c0-16.5 13.5-30 30-30h398.18c16.5 0 30 13.5 30 30v398.18zM127.27 152.73L280 101.82m152.73 50.91L280 101.82m0 356.36l-152.73-50.91m305.46 0L280 458.18" fill="none" stroke="#000" stroke-width="20" stroke-linecap="round" stroke-miterlimit="10")
+                    p(id='fitFillText' class='order-2') Fill
 
             br
-            
+
             div(id ='photo-container' class='min-w-full grid grid-cols-5 gap-6')
                 each photo in photos
                     - var index = photos.indexOf(photo)
-                        div(class='overflow-hidden')
+                        div(class='overflow-hidden rounded-xl shadow-lg border-gray-200 border-4')
                             a(href='//localhost/source' + `${sqPath}` + '/' + SQFinal[index])
-                                img(src='//localhost/' + `${path}` + '/'+ photo, id='images' class='transform scale-100 rounded-xl')
+                                img(src='//localhost/' + `${path}` + '/'+ photo, id='images' class='transform scale-100 duration-200')
 
         script.
             new SimpleLightbox({elements: '#photo-container a'});
