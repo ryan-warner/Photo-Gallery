@@ -38,7 +38,7 @@ html
             div(id ='photo-container' class='min-w-full grid grid-cols-5 gap-6')
                 each photo in photos
                     - var index = photos.indexOf(photo)
-                        div(class='overflow-hidden rounded-xl shadow-lg border-gray-200 border-4')
+                        div(class='overflow-hidden rounded-xl shadow-lg border-gray-200 hover:border-blue-400 border-4')
                             a(href='//localhost/source' + `${sqPath}` + '/' + SQFinal[index])
                                 img(src='//localhost/' + `${path}` + '/'+ photo, id='images' class='transform scale-100 duration-200')
 
