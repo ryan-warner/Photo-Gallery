@@ -16,14 +16,15 @@ html
 
         h1 Photo Gallery
 
-        input(type="text" id='searchbar' name='Search' onkeyup='search()' placeholder='Search here...' class='border-blue-400 border-4 rounded-md')
+        input(type="text" id='searchbar' name='Search' onkeyup='search()' placeholder='Search here...' class='focus:ring-2 ring-red-400 focus:ring-indigo-800 focus:outline-none rounded-md placeholder-opacity-50 text-4xl')
 
         p Navigation Page
             ul(class='' id='albums')
                 each folder in folders
                     - var index = folders.indexOf(folder)
-                        a(href='//localhost/' + links[index]) 
-                           li= folder
+                        a(class='' href='//localhost/' + links[index])
+                            div(class='bg-white w-7/12 px-3 shadow-md m-6 rounded-md hover:bg-gray-400')
+                                li(class='')= folder
 
         p="This gallery is made up of "+`${photos}`+" photos contained in "+`${albums}`+' albums.'
 
