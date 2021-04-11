@@ -42,6 +42,32 @@
         {"type":"file","name":"Image 6.tif:Zone.Identifier"},
         {"type":"file","name":"Image 7.tif"},
         {"type":"file","name":"Image 7.tif:Zone.Identifier"}
+      ]},
+      {"type":"directory","name":"Placeholder 1","contents":[
+      ]},
+      {"type":"directory","name":"Placeholder 10","contents":[
+      ]},
+      {"type":"directory","name":"Placeholder 11","contents":[
+      ]},
+      {"type":"directory","name":"Placeholder 12","contents":[
+      ]},
+      {"type":"directory","name":"Placeholder 13","contents":[
+      ]},
+      {"type":"directory","name":"Placeholder 2","contents":[
+      ]},
+      {"type":"directory","name":"Placeholder 3","contents":[
+      ]},
+      {"type":"directory","name":"Placeholder 4","contents":[
+      ]},
+      {"type":"directory","name":"Placeholder 5","contents":[
+      ]},
+      {"type":"directory","name":"Placeholder 6","contents":[
+      ]},
+      {"type":"directory","name":"Placeholder 7","contents":[
+      ]},
+      {"type":"directory","name":"Placeholder 8","contents":[
+      ]},
+      {"type":"directory","name":"Placeholder 9","contents":[
       ]}
     ]},
     {"type":"directory","name":"SQ","contents":[
@@ -80,6 +106,32 @@
         {"type":"file","name":"Image 5.jpg"},
         {"type":"file","name":"Image 6.jpg"},
         {"type":"file","name":"Image 7.jpg"}
+      ]},
+      {"type":"directory","name":"Placeholder 1","contents":[
+      ]},
+      {"type":"directory","name":"Placeholder 10","contents":[
+      ]},
+      {"type":"directory","name":"Placeholder 11","contents":[
+      ]},
+      {"type":"directory","name":"Placeholder 12","contents":[
+      ]},
+      {"type":"directory","name":"Placeholder 13","contents":[
+      ]},
+      {"type":"directory","name":"Placeholder 2","contents":[
+      ]},
+      {"type":"directory","name":"Placeholder 3","contents":[
+      ]},
+      {"type":"directory","name":"Placeholder 4","contents":[
+      ]},
+      {"type":"directory","name":"Placeholder 5","contents":[
+      ]},
+      {"type":"directory","name":"Placeholder 6","contents":[
+      ]},
+      {"type":"directory","name":"Placeholder 7","contents":[
+      ]},
+      {"type":"directory","name":"Placeholder 8","contents":[
+      ]},
+      {"type":"directory","name":"Placeholder 9","contents":[
       ]}
     ]},
     {"type":"directory","name":"T","contents":[
@@ -137,8 +189,34 @@
         {"type":"file","name":"Image 6.jpg:Zone.Identifier"},
         {"type":"file","name":"Image 7.jpg"},
         {"type":"file","name":"Image 7.jpg:Zone.Identifier"}
+      ]},
+      {"type":"directory","name":"Placeholder 1","contents":[
+      ]},
+      {"type":"directory","name":"Placeholder 10","contents":[
+      ]},
+      {"type":"directory","name":"Placeholder 11","contents":[
+      ]},
+      {"type":"directory","name":"Placeholder 12","contents":[
+      ]},
+      {"type":"directory","name":"Placeholder 13","contents":[
+      ]},
+      {"type":"directory","name":"Placeholder 2","contents":[
+      ]},
+      {"type":"directory","name":"Placeholder 3","contents":[
+      ]},
+      {"type":"directory","name":"Placeholder 4","contents":[
+      ]},
+      {"type":"directory","name":"Placeholder 5","contents":[
+      ]},
+      {"type":"directory","name":"Placeholder 6","contents":[
+      ]},
+      {"type":"directory","name":"Placeholder 7","contents":[
+      ]},
+      {"type":"directory","name":"Placeholder 8","contents":[
+      ]},
+      {"type":"directory","name":"Placeholder 9","contents":[
       ]}
     ]}
   ]},
-  {"type":"report","directories":12,"files":115}
+  {"type":"report","directories":51,"files":115}
 ]

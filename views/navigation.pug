@@ -5,6 +5,8 @@ html
         link(rel='stylesheet', href='/styles/styles.css')
         meta(name='viewport' content='width=device-width, initial-scale=1')
         script(type='text/javascript', src="/corejs/search.js")
+        script(type='text/javascript', src="/corejs/menu.js")
+        script(type='text/javascript', src="/corejs/filter.js")
     body
 
         div(class='bg-gray-100 flex h-16 shadow-md')
@@ -14,21 +16,33 @@ html
 
         br
 
-        h1 Photo Gallery
+        h1 Navigation
 
-        input(type="text" id='searchbar' name='Search' onkeyup='search()' placeholder='Search here...' class='focus:ring-2 ring-red-400 focus:ring-indigo-800 focus:outline-none rounded-md placeholder-opacity-50 text-4xl')
+        div(class='flex justify-between')
 
-        p Navigation Page
-            ul(class='' id='albums')
-                each folder in folders
-                    - var index = folders.indexOf(folder)
-                        a(class='' href='//localhost/' + links[index])
-                            div(class='bg-white w-7/12 px-3 shadow-md m-6 rounded-md hover:bg-gray-400')
-                                li(class='')= folder
+            input(type="text" id='searchbar' name='Search' onkeyup='search()' placeholder='Search here...' class='focus:ring-2 ring-2 ring-gray-400 focus:ring-blue-300 focus:outline-none rounded-md placeholder-opacity-50 text-2xl bg-white')
+
+            div(onclick='menu()')
+                    div(class='')
+                        button(class='bg-white p-2 flex justify-center h-8 items-center rounded-md shadow-sm font-medium text-gray-700 border-gray-300 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-blue-500' id='sort-menu') Sort Libraries
+                            svg(xmlns='http://www.w3.org/2000/svg' class='h-5 w-5 fill-current text-gray-700' viewBox='0 0 20 20')
+                                path(fill-rule='evenodd' d='M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z' clip-rule='evenodd')
+
+            div(class='origin-top-right absolute right-0 mt-12 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none hidden' id='options')
+                div(class='py-1' role='none')
+                    p(onclick='filter("AZ")' class='block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover-text-gray-900' role='menuitem') Sort A-Z
+                    p(onclick='filter("ZA")' class='block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover-text-gray-900' role='menuitem') Sort Z-A
+
+        ul(class='' id='albums')
+            each folder in folders
+                - var index = folders.indexOf(folder)
+                    a(class='' href='//localhost/' + links[index])
+                        div(class='bg-gray-100 px-3 m-2 shadow-md rounded-md hover:bg-gray-200 active:outline-none  active:ring-2 active:ring-blue-300')
+                            li(class='p-4 text-2xl')= folder
 
         p="This gallery is made up of "+`${photos}`+" photos contained in "+`${albums}`+' albums.'
 
-        div(class='bg-gray-100 h-24 min-w-full shadow-inner flex justify-center absolute bottom-0')
+        div(class='bg-gray-100 h-24 min-w-full shadow-inner flex justify-center bottom-0')
             div(class='flex w-6/12 min-h-full justify-between')
                 p(class='font-semibold text-sm order-1 opacity-90 place-self-center text-center flex-1') Made with &#10084;&#65039; by #[ Ryan Warner]
                 p(class='order-2 font-semibold text-sm place-self-center text-center') |
